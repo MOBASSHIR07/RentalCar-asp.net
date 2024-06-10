@@ -1,0 +1,46 @@
+﻿@model RentalCar.Models.Movielist
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #808080ff; /* Dark gray background */
+            color: #fff; /* White text */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #333; /* Dark gray container */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* White box shadow */
+        }
+
+        h2 {
+            color: #ffcc00; /* Yellow heading */
+            text-align: center; /* Center align heading */
+        }
+
+        h1, p {
+            color: #fff; /* White text for movie details */
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome</h2>
+        <div>
+            <h1>Movie ID: @Model.ID</h1>
+            <p>Movie Name: @Model.Name</p>
+            <p> @ViewBag.</p>
+        </div>
+    </div>
+</body>
+</html>

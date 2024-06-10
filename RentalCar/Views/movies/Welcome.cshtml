@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Welcome";
+}
+
+
+@{
+    ViewBag.Title = "Welcome";
+}
+
+<h2>@ViewBag.Message</h2>
+
+@if (ViewBag.NumTimes > 1)
+{
+    <p>You have been welcomed @ViewBag.NumTimes times!</p>
+}
+else
+{
+    <p>Welcome!</p>
+}
+@ViewBag.Message
+
+

@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Customer";
+}
+
+<h2>Here are Customers</h2>
+
+@if (ViewBag.Customer != null && ViewBag.Customer.Count > 0)
+{
+    <ul>
+        @foreach (var customer in ViewBag.Customer)
+        {
+            <li>ID: @customer.ID, Name: @customer.NAME</li>
+        }
+    </ul>
+}
+else
+{
+    <p>No customers to display.</p>
+}
